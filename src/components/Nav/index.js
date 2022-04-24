@@ -1,19 +1,21 @@
+import { Link } from "react-router-dom";
+
 const Nav = () => {
   return (
     <nav>
-      <a className="navButton" href='#bio'>
+      <Link to='/about' className="navButton">
         /<em>About Me</em>
-      </a>
+      </Link>
 
-      <a className="navButton" href='#projects'>
+      <Link to='/projects' className="navButton" href='#projects'>
         /<em>Projects</em>
-      </a>
+      </Link>
 
-      <a className="navButton" href='#contact-me'>
+      <Link to='/contact' className="navButton" href='#contact-me'>
         /<em>Contact</em>
-      </a>
+      </Link>
 
-      <a className="navButton" href='#resume'>
+      <a className="navButton" href='https://docs.google.com/document/d/1W2GTXjtN1VLhStqjbz1U3N21neRcaP8Yk0BDTz9txpI/edit?usp=sharing' target='_blank' rel="noreferrer">
         /<em>Resume</em>
       </a>
     </nav>

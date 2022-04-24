@@ -181,6 +181,18 @@ header nav ul li a  {
 
 /* Header/navigation style end */
 
+/* Home apge styling */
+.home-main   {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding-top: 20px;
+}
+
+.home-img img    {
+  width: 100%;
+}
+
 /* About me style start */
 .about-me   {
   display: flex;
@@ -357,7 +369,7 @@ header nav ul li a  {
   width: 100%;
   text-align: center;
   padding: 0px;
-  margin: 10px 0 0 0;
+
 }
 
 .footer-section h3 {
@@ -455,6 +467,7 @@ header nav ul li a  {
   .navButton  {
       padding: 20px;
       font-size: 2.5vw;
+      margin: auto;
   }
 
   .about-me   {
@@ -462,6 +475,12 @@ header nav ul li a  {
       width: 900px;
       margin: auto;
   }
+
+  .home-main  {
+    justify-content: space-around;
+    width: 900px;
+    margin: auto;
+}
 
   .bio    {
       justify-content: space-around;
@@ -471,6 +490,10 @@ header nav ul li a  {
 
   .bio-img img    {
       width: 600px;
+  }
+
+  .home-img img {
+    width: 900px;
   }
 
   .projects h3    {

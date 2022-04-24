@@ -1,14 +1,15 @@
 import logoImage from '../../assets/images/portfolioLogo.png';
 import Nav from '../Nav';
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
     return(
         <header>
         <div className="logo">
-            <a href="./index.html">
+            <Link to="/">
             <img src={logoImage} alt="Logo" />
-            </a>
+            </Link>
         </div>
 
         <Nav/>
