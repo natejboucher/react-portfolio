@@ -1,6 +1,6 @@
-const Contact = ()=>{
+const Footer = ()=>{
     return (
-        <section id="contact-me" className="contact-section">
+        <section id="footer" className="footer-section">
         <div className="contact-info">
             <h3>Want to work together?</h3>
             <address>
@@ -13,4 +13,4 @@ const Contact = ()=>{
     )
 }
 
-export default Contact;
+export default Footer;

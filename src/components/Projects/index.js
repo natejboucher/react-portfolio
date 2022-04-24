@@ -17,7 +17,7 @@ const Projects = ()=>{
         </a>
 
         <a href="https://natejboucher.github.io/safecation/" target="_blank" rel='noreferrer' className="project-icon-2">
-            <div classNAme="project-text">
+            <div className="project-text">
                 <h4>Fridge to Feast</h4>
                 <p>HTML / CSS / JS / Bulma</p>
             </div>

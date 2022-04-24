@@ -1,4 +1,5 @@
 import logoImage from '../../assets/images/portfolioLogo.png';
+import Nav from '../Nav';
 
 const Header = () => {
 
@@ -10,19 +11,7 @@ const Header = () => {
             </a>
         </div>
 
-        <nav>
-            <ul>
-                <li className="nav1">
-                    <a href="#bio">/<em>About Me</em></a>
-                </li>
-                <li className="nav2">
-                 <a href ="#projects">/<em>Projects</em></a>
-                </li>
-                <li className="nav3">
-                    <a href="#contact-me">/<em>Contact</em></a>
-                </li>
-            </ul>
-        </nav>
+        <Nav/>
     </header>
     );
 }
