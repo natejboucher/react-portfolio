@@ -249,6 +249,37 @@ header nav ul li a  {
 
 /* About me style end */
 
+/* Contact style start */
+
+.contact   {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding: 50px 0 50px 0;
+}
+
+.contact-form  {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin: auto;
+  border-radius: 0 0 5px 5px;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#contact-form {
+  margin: auto;
+}
+
+.form-el {
+  margin: 10px auto 10px auto;
+}
+
+
+/* Contact style end */
+
 /* projects style start */
 .projects   {
   display: flex;
