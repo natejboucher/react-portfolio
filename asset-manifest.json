@@ -1,22 +1,31 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.d72dd952.css",
-    "main.js": "/react-portfolio/static/js/main.07331693.js",
+    "main.css": "/react-portfolio/static/css/main.c0267109.css",
+    "main.js": "/react-portfolio/static/js/main.ff8589b8.js",
     "static/js/787.8eb2affe.chunk.js": "/react-portfolio/static/js/787.8eb2affe.chunk.js",
     "static/media/codconnect.png": "/react-portfolio/static/media/codconnect.82cb32ca22fcdbed4379.png",
+    "static/media/memoji.svg": "/react-portfolio/static/media/memoji.11a814e8d9861c19e374.svg",
     "static/media/memoji.png": "/react-portfolio/static/media/memoji.6b1692ee73539d5037b6.png",
+    "static/media/screenshot.png": "/react-portfolio/static/media/screenshot.0129ae5768eef2260a29.png",
+    "static/media/hoirseonimg.png": "/react-portfolio/static/media/hoirseonimg.a5bf5354fdf9579f619a.png",
     "static/media/fridgetofeast.png": "/react-portfolio/static/media/fridgetofeast.2c1b104c4fdb098ddf52.png",
     "static/media/runbuddyimg.png": "/react-portfolio/static/media/runbuddyimg.299bc0b7fdf69c61d4c6.png",
+    "static/media/biopic.jpeg": "/react-portfolio/static/media/biopic.796240ee0491f9b03cb6.jpeg",
     "static/media/portfolioLogo.png": "/react-portfolio/static/media/portfolioLogo.698adecba26720a85a57.png",
     "static/media/weatherdashboard.png": "/react-portfolio/static/media/weatherdashboard.cdbc7d9c3bb7dbf8cf6a.png",
+    "static/media/budgettracker.png": "/react-portfolio/static/media/budgettracker.afafe09f6b6d122bedea.png",
+    "static/media/techblog.png": "/react-portfolio/static/media/techblog.6dc596c6f43c92ea8009.png",
     "static/media/notetaker.png": "/react-portfolio/static/media/notetaker.22926b4925e912619b1a.png",
+    "static/media/placeholder.png": "/react-portfolio/static/media/placeholder.c8db7d4e4d0f1b607921.png",
+    "static/media/portfolioLogo.svg": "/react-portfolio/static/media/portfolioLogo.9bba808b83a4e9faa5a8.svg",
+    "static/media/favicon.ico": "/react-portfolio/static/media/favicon.dc394f9b3d33674549c9.ico",
     "index.html": "/react-portfolio/index.html",
-    "main.d72dd952.css.map": "/react-portfolio/static/css/main.d72dd952.css.map",
-    "main.07331693.js.map": "/react-portfolio/static/js/main.07331693.js.map",
+    "main.c0267109.css.map": "/react-portfolio/static/css/main.c0267109.css.map",
+    "main.ff8589b8.js.map": "/react-portfolio/static/js/main.ff8589b8.js.map",
     "787.8eb2affe.chunk.js.map": "/react-portfolio/static/js/787.8eb2affe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d72dd952.css",
-    "static/js/main.07331693.js"
+    "static/css/main.c0267109.css",
+    "static/js/main.ff8589b8.js"
   ]
 }
