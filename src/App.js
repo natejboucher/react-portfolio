@@ -1,7 +1,6 @@
-import React, {Fragment} from 'react';
+import React  from 'react'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-// import 'bootstrap/dist/bootstrap.min.css';
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -16,10 +15,10 @@ function App() {
         <Header />
         <div className='container'>
           <Routes>
-            <Route exact path='/' element={<Home />} />
-            <Route exact path='/about' element={<About />} />
+            <Route exact path='/' element={<Home/>} />
+            <Route exact path='/about' element={<About/>} />
             <Route exact path='/projects' element={<><About /><Projects/></>} />
-            <Route exact path='/contact' element={<Contact />} />
+            <Route exact path='/contact' element={<Contact/>} />
           </Routes>
         </div>
         <Footer />

@@ -1,4 +1,3 @@
-// import profileImage from "../../assets/images/memoji.png";
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 
@@ -37,66 +36,57 @@ const Contact = () => {
   };
   return (
     <section className='contact'>
-        {/* <div className="bio-img"><img src={profileImage} alt="Nathaniel Boucher Memoji" /></div> */}
-
-        <div className='contact-form'>
-          <form
-            id='contact-form'
-            onSubmit={handleSubmit}
-            className='text-center border border-light p-5'
-            action='#!'
-          >
-            <p className='h2 mb-4'>Contact me</p>
-
-            {/* <!-- Name --> */}
-            <input
-              name='name'
-              type='text'
-              defaultValue={name}
-              id='defaultContactFormName'
-              className='form-control form-el'
+      <div className='contact-form'>
+        <form
+          id='contact-form'
+          onSubmit={handleSubmit}
+          className='text-center border border-light p-5'
+          action='#!'
+        >
+          <p className='h2 mb-4'>Contact me</p>
+          <input
+            name='name'
+            type='text'
+            defaultValue={name}
+            id='defaultContactFormName'
+            className='form-control form-el'
+            onBlur={handleChange}
+            placeholder='Name'
+          />
+          <input
+            name='email'
+            type='email'
+            defaultValue={email}
+            id='defaultContactFormEmail'
+            className='form-control form-el'
+            onBlur={handleChange}
+            placeholder='E-mail'
+          />
+          <div className='form-group mt-5 form-el'>
+            <textarea
+              name='message'
+              defaultValue={message}
               onBlur={handleChange}
-              placeholder='Name'
-            />
-
-            {/* <!-- Email --> */}
-            <input
-              name='email'
-              type='email'
-              defaultValue={email}
-              id='defaultContactFormEmail'
-              className='form-control form-el'
-              onBlur={handleChange}
-              placeholder='E-mail'
-            />
-
-            {/* <!-- Message --> */}
-            <div className='form-group mt-5 form-el'>
-              <textarea
-                name='message'
-                defaultValue={message}
-                onBlur={handleChange}
-                className='form-control rounded-0'
-                id='exampleFormControlTextarea2'
-                rows='3'
-                placeholder='Message'
-              ></textarea>
+              className='form-control rounded-0'
+              id='exampleFormControlTextarea2'
+              rows='3'
+              placeholder='Message'
+            ></textarea>
+          </div>
+          {errorMessage && (
+            <div>
+              <p className='error-text'>{errorMessage}</p>
             </div>
-            {errorMessage && (
-              <div>
-                <p className='error-text'>{errorMessage}</p>
-              </div>
-            )}
-            {/* <!-- Send button --> */}
-            <button
-              data-testid='button'
-              className='btn btn-primary btn-block'
-              type='submit'
-            >
-              Send
-            </button>
-          </form>
-        </div>
+          )}
+          <button
+            data-testid='button'
+            className='btn btn-primary btn-block'
+            type='submit'
+          >
+            Send
+          </button>
+        </form>
+      </div>
     </section>
   );
 };

@@ -1,43 +1,62 @@
-const Projects = ()=>{
-    return (
-        <section id="projects" className="projects">
-        <h3>My Projects:</h3>
-            <a href="https://natejboucher.github.io/weather-dashboard/" target="_blank" rel='noreferrer' className="featured-project">
-                <div className="featured-project-text">
-                    <span role="img" aria-label="Screenshot of Weather Dashboard project"> </span>
-                    <h4>Weather Dashboard</h4>
-                    <p>HTML / CSS / JS / Bootstrap</p>
-                </div>
-            </a>
-        <a href="https://rocky-sierra-14761.herokuapp.com/" target="_blank" rel='noreferrer' className="project-icon-1">
-            <div className="project-text">
-                <h4>COD Connect</h4>
-                <p>Boostrap/Firebase/MySQL</p>
-            </div>
-        </a>
+const Projects = () => {
+  const project = [
+    {
+      name: "COD Connect",
+      image: "codconnect.png",
+      deployed: "https://rocky-sierra-14761.herokuapp.com/",
+      github: "https://github.com/benjamind10/gaming-blog",
+    },
+    {
+      name: "Weather Dashboard",
+      image: "weatherdashboard.png",
+      deployed: "https://natejboucher.github.io/weather-dashboard/",
+      github: "https://github.com/natejboucher/weather-dashboard",
+    },
+    {
+      name: "Fridge to Feast",
+      image: "fridgetofeast.png",
+      deployed: "https://natejboucher.github.io/safecation/",
+      github: "https://github.com/natejboucher/safecation",
+    },
+    {
+      name: "Note Taker",
+      image: "notetaker.png",
+      deployed: "https://agile-plateau-16551.herokuapp.com/",
+      github: "https://github.com/natejboucher/note_taker",
+    },
+    {
+      name: "Tech Blog",
+      image: "techblog.png",
+      deployed: "https://pacific-wave-47472.herokuapp.com/",
+      github: "https://github.com/natejboucher/tech-blog",
+    },
+    {
+      name: "Budget Tracker",
+      image: "notetaker.png",
+      deployed: "https://blooming-sands-75650.herokuapp.com/",
+      github: "https://github.com/natejboucher/budget-tracker",
+    },
+  ];
 
-        <a href="https://natejboucher.github.io/safecation/" target="_blank" rel='noreferrer' className="project-icon-2">
-            <div className="project-text">
-                <h4>Fridge to Feast</h4>
-                <p>HTML / CSS / JS / Bulma</p>
-            </div>
-        </a>
-
-        <a href="https://natejboucher.github.io/run-buddy/" target="_blank" rel='noreferrer' className="project-icon-3">
-            <div className="project-text">
-                <h4>Run Buddy</h4>
-                <p>HTML / CSS</p>
-            </div>
-        </a>
-
-        <a href="https://agile-plateau-16551.herokuapp.com/" target="_blank" rel='noreferrer' className="project-icon-4">
-            <div className="project-text">
-                <h4>Note Taker</h4>
-                <p>HTML/CSS/JS/Node/Express</p>
-            </div>
-        </a>
+  return (
+    <section id='projects' className='projects row'>
+      <div className='col-12'>
+      <h3 className='m-auto'>My Projects:</h3>
+      </div>
+      {project.map((project) => (
+          <div key={project.name} className="card project-card">
+          <div className='project-img'>
+          <img className="card-img-top" src={require(`../../assets/images/${project.image}`)} alt="Project screenshot." ></img>
+          </div>
+          <div className="card-body text-center">
+            <h5 className="card-title align-center text-center">{project.name}</h5>
+            <a href={project.deployed} target='_blank' rel='noreferrer' className="btn btn-light text-dark align-center">Deployed Application</a>
+            <a href={project.github}target='_blank' rel='noreferrer' className="btn btn-light text-dark align-center">Github Repository</a>
+          </div>
+        </div>
+      ))}
     </section>
-    );
-}
+  );
+};
 
 export default Projects;
