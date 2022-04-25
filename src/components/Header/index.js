@@ -7,7 +7,7 @@ const Header = () => {
     return(
         <header>
         <div className="logo">
-            <Link to="/react-portfolio">
+            <Link to="/">
             <img src={logoImage} alt="Logo" />
             </Link>
         </div>

@@ -15,11 +15,11 @@ function App() {
         <Header />
         <div className='container'>
           <Routes>
-            <Route exact path='/react-portfolio' element={<Home/>} />
+            <Route exact path='/react-porfolio' element={<Home/>} />
             <Route exact path='/' element={<Home/>} />
-            <Route exact path='/react-portfolio/about' element={<About/>} />
-            <Route exact path='/react-portfolio/projects' element={<><About /><Projects/></>} />
-            <Route exact path='/react-portfolio/contact' element={<Contact/>} />
+            <Route exact path='/about' element={<About/>} />
+            <Route exact path='/projects' element={<><About /><Projects/></>} />
+            <Route exact path='/contact' element={<Contact/>} />
           </Routes>
         </div>
         <Footer />
