@@ -40,7 +40,7 @@ const Contact = () => {
         <form
           id='contact-form'
           onSubmit={handleSubmit}
-          className='text-center border border-light p-5'
+          className='text-center p-5 w-75'
           action='#!'
         >
           <p className='h2 mb-4'>Contact me</p>

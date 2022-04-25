@@ -15,6 +15,7 @@ function App() {
         <Header />
         <div className='container'>
           <Routes>
+            <Route exact path='/react-portfolio' element={<Home/>} />
             <Route exact path='/' element={<Home/>} />
             <Route exact path='/about' element={<About/>} />
             <Route exact path='/projects' element={<><About /><Projects/></>} />
