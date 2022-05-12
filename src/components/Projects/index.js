@@ -1,6 +1,12 @@
 const Projects = () => {
   const project = [
     {
+      name: "Broadway Suspension",
+      image: "broadwaysuspension.png",
+      deployed: "https://broadway-suspension.herokuapp.com/",
+      github: "https://github.com/benjamind10/broadway-suspension",
+    },
+    {
       name: "COD Connect",
       image: "codconnect.png",
       deployed: "https://rocky-sierra-14761.herokuapp.com/",
